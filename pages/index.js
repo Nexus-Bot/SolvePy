@@ -149,28 +149,28 @@ ${editorCode}`;
                 </Card>
               )}
             </Grid>
-            <Box
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
-              flexDirection="column"
-              width="100%"
-            >
-              <Typography m="auto" pt="2rem" color="Highlight">
-                Copyright &#xA9; {`${new Date().getFullYear()} Jr. Nexus`}
-              </Typography>
-              <Typography color="ActiveCaption">
-                If you find some bugs or difficulty using this app. Please
-                contact us on{" "}
-                <a
-                  href="mailto:nexus.org@protonmail.com"
-                  style={{ color: "#fff", textDecoration: "none" }}
-                >
-                  nexus.org@protonmail.com
-                </a>
-              </Typography>
-            </Box>
           </Grid>
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            flexDirection="column"
+            textAlign="center"
+          >
+            <Typography m="auto" pt="2rem" color="Highlight">
+              Copyright &#xA9; {`${new Date().getFullYear()} Jr. Nexus`}
+            </Typography>
+            <Typography color="ActiveCaption">
+              If you find some bugs or difficulty using this app. Please contact
+              us on{" "}
+              <a
+                href="mailto:nexus.org@protonmail.com"
+                style={{ color: "#fff", textDecoration: "none" }}
+              >
+                nexus.org@protonmail.com
+              </a>
+            </Typography>
+          </Box>
         </>
       </Container>
     </ThemeProvider>
