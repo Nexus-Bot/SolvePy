@@ -137,7 +137,7 @@ ${editorCode}`;
                 <Card>
                   <CardHeader
                     title="Fixed Code"
-                    subheader="The fixed version of your code willl appear here"
+                    subheader="The fixed version of your code will appear here"
                   />
                   <AceEditor
                     mode="python"
