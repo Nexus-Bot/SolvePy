@@ -1,10 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SolvePy
+
+A web-based tool to help developers fix their python code in a snap.
+The tool is developed with the help of OpenAI. Very easy to use and flexible. Just enter the buggy code and we will fix it for you
 
 ## Getting Started
 
-First, run the development server:
+You need to create .env.local in your project directory to start this app.
+This App uses OpenAI API so you need to add your API key in .env.local file as follows =>
+`OPENAI_API_KEY=YOUR_KEY`
+
+Then, run the following commands:
 
 ```bash
+npm install
+
 npm run dev
 # or
 yarn dev
@@ -14,21 +23,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+OpenAI route API can be accessed on [http://localhost:3000/api/openai](http://localhost:3000/api/openai). This endpoint can be edited in `pages/api/openai.js`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about this project you can contact us on our email <a href="mailto:nexus.org@protonmail.com">nexus.org@protonmail.com</a>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This app is deployed and running on vercel. Here is the link to our app => [SolvePy](https://solve-py.vercel.app/)
