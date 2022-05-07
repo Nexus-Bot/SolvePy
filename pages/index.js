@@ -13,12 +13,16 @@ import {
 import dynamic from "next/dynamic";
 import { useState } from "react";
 
+// Material Ui theme
 const theme = createTheme({
   palette: {
     mode: "dark",
   },
 });
 
+// Ace editor works on window object and cannot be rendered server side
+// So we need to disable SSR for ace editor
+// After importing ace editor we can import corresponding theme and cod modes.
 const AceEditor = dynamic(
   async () => {
     const ace = await import("react-ace");
@@ -42,10 +46,11 @@ export default function Home() {
     seteditorCode(value);
   };
 
-  const handleSolverChange = (value) => {};
-
+  // Function to get fixed python code
+  // This functions calls the openai api with buggy code and sets the fixed code
   const getOpenAIResponse = async () => {
     setIsLoading(true);
+    // We need this text at the start of our buggy code so openAI can handle the request properly
     const text = `##### Fix bugs in the below function
  
 ### Buggy Python

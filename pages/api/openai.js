@@ -19,7 +19,7 @@ const openaiAPI = async (req, res) => {
     res.status(200).json({ text: `${gptResponse.data.choices[0].text}` });
   } catch (error) {
     console.log(error);
-    res.status(500).json({ text: "err" });
+    res.status(500).json({ text: error.message });
   }
 };
 
