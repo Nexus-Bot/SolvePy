@@ -143,7 +143,6 @@ ${editorCode}`;
                     mode="python"
                     theme="monokai"
                     value={fixedCode}
-                    onChange={handleSolverChange}
                     name="Solver"
                     editorProps={{ $blockScrolling: true }}
                   />
